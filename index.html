@@ -8,7 +8,10 @@
     <link rel="stylesheet" href="./dist/output.css" />
   </head>
   <body>
-    <header class="py-[25px] fixed top-0 left-0 w-full backdrop-blur z-50">
+    <header
+      id="nav"
+      class="py-[25px] fixed top-0 left-0 w-full backdrop-blur z-50"
+    >
       <nav>
         <div class="container flex items-center justify-between">
           <img src="./assets/Logo.svg" alt="" />
@@ -41,17 +44,20 @@
             class="w-[463px] flex items-center rounded-[50px] bg-slate-500 border-[1px] border-solid border-white backdrop-blur py-[10px] px-[12px]"
           >
             <input
+              id="salom"
               class="w-full bg-transparent text-white placeholder:text-white outline-none ml-[18px]"
               type="search"
               placeholder="Search"
             />
-            <img class="w-[50px]" src="./assets/btn-search.svg" alt="" />
+            <label for="salom">
+              <img class="w-[50px]" src="./assets/btn-search.svg" alt="" />
+            </label>
           </div>
         </div>
 
         <div
           id="linear-box"
-          class="absolute bottom-0 left-0 w-full h-[100px] z-50"
+          class="absolute bottom-0 left-0 w-full h-[100px] z-40"
         ></div>
       </section>
 
@@ -169,6 +175,49 @@
           </div>
         </div>
       </section>
+
+      <section id="interior" class="mb-[182px]">
+        <div class="container">
+          <h1
+            class="text-[64px] leading-[75px] font-normal mb-[16px] text-center"
+          >
+            Interior Plant Reference
+          </h1>
+          <p
+            class="text-[24px] leading-[28px] font-normal text-center text-slate-500"
+          >
+            make your home so comfortable with refreshing plants
+          </p>
+
+          <div class="mt-[82px] flex gap-7">
+            <div class="flex flex-col gap-7">
+              <div class="overflow-hidden rounded-[50px]">
+                <img
+                  class="transition-all grayscale scale-[1.1] hover:grayscale-0 cursor-pointer h-full hover:scale-[1.5]"
+                  src="./assets/high-angle-desk-arrangement-with-plants.png"
+                  alt=""
+                />
+              </div>
+              <div class="overflow-hidden rounded-[50px]">
+                <img
+                  class="transition-all grayscale scale-[1.1] hover:grayscale-0 cursor-pointer h-full hover:scale-[1.5]"
+                  src="./assets/high-angle-desk-arrangement-with-plants.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="overflow-hidden rounded-[50px]">
+              <img
+                class="transition-all grayscale scale-[1.1] hover:grayscale-0 cursor-pointer h-full hover:scale-[1.5]"
+                src="./assets/high-angle-desk-arrangement-with-plants.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <script src="./js/app.js"></script>
   </body>
 </html>
